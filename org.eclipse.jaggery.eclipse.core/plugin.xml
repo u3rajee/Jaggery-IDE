@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="org.eclipse.jaggery.core.nature"
+         name="%jaggeryNature"
+         point="org.eclipse.core.resources.natures">
+         <runtime>
+         <run
+               class="org.eclipse.jaggery.eclipse.core.JaggeryNature">
+         </run>
+      </runtime>
+   </extension>
+   <extension
+         point="org.eclipse.dltk.mod.core.language">
+      <language
+            class="org.eclipse.jaggery.eclipse.core.JaggeryLanguageToolkit"
+            nature="org.eclipse.jaggery.core.nature"
+            priority="0">
+      </language>
+   </extension>
+   <extension
+         point="org.eclipse.dltk.mod.core.sourceElementParsers">
+         <parser class = "org.eclipse.jaggery.eclipse.internal.compiler.JaggerySourceElementParser"
+         		 nature = "org.eclipse.jaggery.core.nature"
+         		 priority="0">
+         </parser>
+   </extension>
+   <extension
+         point="org.eclipse.core.contenttype.contentTypes">
+          <content-type
+	            file-extensions="jag"
+	            base-type="org.eclipse.core.runtime.text"
+	            id="org.eclipse.dltk.mod.jaggeryContentType"
+	            name="%jaggeryContentType"
+	            priority="high">
+	      </content-type>
+   </extension>
+
+</plugin>
+
+
+

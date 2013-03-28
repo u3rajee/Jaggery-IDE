@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.dltk.mod.ui.language">
+         <language class="org.eclipse.jaggery.eclipse.internal.ui.JaggeryUILanguageToolkit " nature="org.eclipse.jaggery.core.nature">
+      </language>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+         <category id="org.eclipse.jaggery.eclipse.ui" name="%jaggeryCategory">
+     	 </category>
+     	 <wizard category="org.eclipse.jaggery.eclipse.ui"
+     	  		  class="org.eclipse.jaggery.eclipse.internal.ui.wizards.JaggeryProjectCreationWizard"  
+     	  		  id="org.eclipse.jaggery.eclipse.ui.JaggeryProjectWizard" 
+     	  		  name="%jaggeryProject" 
+     	  		  project="true">
+         <description>
+            %jaggeryProjectDescription
+         </description>
+      </wizard>  
+      <wizard category="org.eclipse.jaggery.eclipse.ui" 
+      		  class="org.eclipse.jaggery.eclipse.internal.ui.wizards.NewJagFileWizard" 
+      		  id="org.eclipse.jaggery.eclipse.ui.JagFileCreation" 
+       		  name="%NewJagFile.label">
+         <description>
+            %createNewJagFile
+         </description> 
+    </wizard>    
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+         <page category="org.eclipse.jaggery.eclipse.ui.jaggery" class="org.eclipse.jaggery.eclipse.internal.ui.preferences.JAGBuildPathPreferencePage" id="org.eclipse.jaggery.eclipse.ui.jaggery.BuildPath" name="%JAGBuildPathPreferencePage.name">
+   </page>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+                <editor
+                     class="org.eclipse.jaggery.eclipse.internal.ui.editor.JaggeryEditor"
+                     
+                     default="true"
+                     icon="/icons/obj16/sourceEditor.gif"
+                     id="org.eclipse.jaggery.ui.JagEditor"
+                     filenames="*.jag"
+                     name="%jaggeryEditor">
+         <contentTypeBinding contentTypeId="org.eclipse.dltk.mod.jaggeryContentType">
+         </contentTypeBinding>
+         </editor>
+               
+   </extension>
+
+</plugin>
+

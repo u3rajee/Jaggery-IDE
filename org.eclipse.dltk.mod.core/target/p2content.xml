@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='org.eclipse.dltk.mod.core' version='0.10.0.201303250907'>
+    <update id='org.eclipse.dltk.mod.core' range='[0.0.0,0.10.0.201303250907)' severity='0'/>
+    <properties size='8'>
+      <property name='df_LT.pluginProvider' value='eclipse.org'/>
+      <property name='df_LT.pluginName' value='Dynamic Languages Toolkit Core (Incubation)'/>
+      <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+      <property name='org.eclipse.equinox.p2.provider' value='%pluginProvider'/>
+      <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      <property name='maven-groupId' value='org.eclipse.vjet.extmod.dltk'/>
+      <property name='maven-artifactId' value='org.eclipse.dltk.mod.core'/>
+      <property name='maven-version' value='0.10.0-SNAPSHOT'/>
+    </properties>
+    <provides size='50'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.dltk.mod.core' version='0.10.0.201303250907'/>
+      <provided namespace='osgi.bundle' name='org.eclipse.dltk.mod.core' version='0.10.0.201303250907'/>
+      <provided namespace='java.package' name='org.eclipse.vjet.eclipse.core' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.ast' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.ast.declarations' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.ast.expressions' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.ast.parser' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.ast.references' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.ast.statements' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.ast.utils' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.codeassist' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.codeassist.complete' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.compiler' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.compiler.env' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.compiler.env.lookup' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.compiler.problem' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.compiler.task' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.compiler.util' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.core' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.core.builder' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.core.environment' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.core.internal.environment' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.core.mixin' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.core.search' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.core.search.index' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.core.search.indexing' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.core.search.matching' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.evaluation.types' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.internal.codeassist' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.internal.codeassist.impl' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.internal.codeassist.select' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.internal.compiler.env' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.internal.compiler.impl' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.internal.compiler.lookup' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.internal.compiler.problem' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.internal.core' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.internal.core.builder' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.internal.core.hierarchy' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.internal.core.mixin' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.internal.core.search' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.internal.core.search.matching' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.internal.core.search.processing' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.internal.core.util' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.ti' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.ti.goals' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.ti.statistics' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.ti.types' version='0.0.0'/>
+      <provided namespace='java.package' name='org.eclipse.dltk.mod.utils' version='0.0.0'/>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+    </provides>
+    <requires size='5'>
+      <required namespace='osgi.bundle' name='org.eclipse.core.filesystem' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.apache.commons.collections' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='javax.xml' range='0.0.0'/>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='org.eclipse.dltk.mod.core' version='0.10.0.201303250907'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: org.eclipse.dltk.mod.core;singleton:=true&#xA;Bundle-Version: 0.10.0.201303250907&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>
